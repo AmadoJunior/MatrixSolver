@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8dce1a3-f2e7-4610-96bb-74634b08a5dc" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,17 +17,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XN9MaoxGyZZgWapKgTQhEUoE2T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OCR/slf4j-api-2.0.0-alpha1.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -36,18 +45,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -75,5 +72,52 @@
       <updated>1580875637890</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1760" y="641" width="847" height="677" key="#Project_Structure" timestamp="1581720212199">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state x="1760" y="641" width="847" height="677" key="#Project_Structure/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720212199" />
+    <state x="1818" y="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581720338854">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state x="1818" y="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720338854" />
+    <state x="2097" y="800" width="515" height="479" key="EnvironmentVariablesDialog" timestamp="1581720328635">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state x="2097" y="800" width="515" height="479" key="EnvironmentVariablesDialog/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720328635" />
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1581720413257">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720413257" />
+    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1581720413257">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.center/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720413257" />
+    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1581720413256">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.left/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720413256" />
+    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1581720413257">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.right/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720413257" />
+    <state x="1285" y="566" width="1024" height="845" key="SettingsEditor" timestamp="1581720397590">
+      <screen x="1080" y="320" width="2560" height="1440" />
+    </state>
+    <state x="1285" y="566" width="1024" height="845" key="SettingsEditor/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720397590" />
   </component>
 </project>
