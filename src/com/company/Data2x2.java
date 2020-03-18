@@ -6,8 +6,8 @@ public class Data2x2 {
     private String equation2;
 
     //RESULTING ARRAYS
-    private int[][] matrix = new int[2][2];
-    private int[] vector = new int[2];
+    private double[][] matrix = new double[2][2];
+    private double[] vector = new double[2];
 
     //CONSTRUCTOR
     public Data2x2(String[] equations){
@@ -27,11 +27,11 @@ public class Data2x2 {
 
         //STORING INTO TEMP ARRAYS
         arr1 = this.equation1.split(pattern1);
-        arr2 = this.equation2.split(pattern2);
+        arr2 = this.equation2.split(pattern1);
 
         //Setting Vector Array
-        vector[0] = Integer.parseInt(arr1[1]);
-        vector[1] = Integer.parseInt(arr2[1]);
+        vector[0] = Double.parseDouble(arr1[1]);
+        vector[1] = Double.parseDouble(arr2[1]);
 
         //STORING INTO TEMP ARRAY FROM ARR1
         temp = arr1[0].split(pattern2);
@@ -39,7 +39,7 @@ public class Data2x2 {
         //PARSING AND STORING INTO 2D ARRAY
         for(int i = 0; i < this.matrix[0].length; i++){
 
-            this.matrix[0][i] = Integer.parseInt(temp[i]);
+            this.matrix[0][i] = Double.parseDouble(temp[i]);
 
         }
 
@@ -49,20 +49,34 @@ public class Data2x2 {
         //PARSING AND STORING INTO 2D ARRAY
         for(int i = 0; i < this.matrix[1].length; i++){
 
-            this.matrix[1][i] = Integer.parseInt(temp[i]);
+            this.matrix[1][i] = Double.parseDouble(temp[i]);
 
         }
 
+
     }
 
-    public int[] solve2x2(){
-        //FIND REVERSE
+    public double[] solve2x2(){
+        //FIND DETERMINANT
+        double det = (this.matrix[0][0]*this.matrix[1][1])-(this.matrix[0][1]*this.matrix[1][0]);
 
-        //MULTIPLY
+        //GET COO-FACTORS
+        double temp = this.matrix[0][0];
+        this.matrix[0][0] = this.matrix[1][1];
+        this.matrix[1][1] = temp;
+        this.matrix[0][1] = -this.matrix[0][1];
+        this.matrix[1][0] = -this.matrix[1][0];
 
-        //RETURN RESULT IN FORM OF ARRAY
-
-        return null;
+        //MULTIPLY BY INVERSE DET
+        for(int i = 0; i < matrix[0].length; i++){
+            this.matrix[1][i] *= 1/det;
+            this.matrix[0][i] *= 1/det;
+        }
+        //AFTER FINDING INVERSE MATRIX I WILL FIND X AND Y
+        double[] result = new double[2];
+        result[0] = (this.matrix[0][0]*this.vector[0])+(this.matrix[0][1]*this.vector[1]);
+        result[1] = (this.matrix[1][0]*this.vector[0])+(this.matrix[1][1]*vector[1]);
+        return result;
     }
 
     public String getEq1(){
@@ -73,24 +87,24 @@ public class Data2x2 {
         return this.equation2;
     }
 
-    public int[] getVector(){
+    public double[] getVector(){
         return this.vector;
     }
 
-    public int[][] getMatrix(){
+    public double[][] getMatrix(){
         return this.matrix;
     }
 
     public void print(){
 
         //PRINTS VEC
-        for(int i: this.vector){
+        for(double i: this.vector){
             System.out.println("Vector: " + i);
         }
 
         //PRINTS MATRIX
-        for(int i[]: this.matrix){
-            for(int f: i){
+        for(double i[]: this.matrix){
+            for(double f: i){
                 System.out.println("Matrix: " + f);
             }
         }
