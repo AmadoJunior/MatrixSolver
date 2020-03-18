@@ -16,6 +16,7 @@ public class Main {
         File img = new File("test.png");
         ITesseract imgParser = new Tesseract();
         String[] system = new String[2];
+
         try{
             String test = imgParser.doOCR(img);
             system = test.split("\n");

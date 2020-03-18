@@ -13,6 +13,7 @@ public class Data2x2 {
     public Data2x2(String[] equations){
         this.equation1 = equations[0];
         this.equation2 = equations[1];
+        setArrays();
     }
 
     public void setArrays(){
