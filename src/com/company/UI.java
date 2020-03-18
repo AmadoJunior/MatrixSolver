@@ -10,7 +10,7 @@ public class UI implements ActionListener {
     //Fields
     Browse browse;
     JFrame frame;
-    JTextField eq1, eq2;
+    public static JTextField eq1, eq2;
     JLabel title, manual, eq1Label, eq2Label, importImg;
     public static JLabel result;
     JButton solveButton;
@@ -108,6 +108,8 @@ class Browse implements ActionListener {
 
             try {
                 String[] system = imgParser.doOCR(img).split("\n");
+                UI.eq1.setText(system[0]);
+                UI.eq2.setText(system[1]);
                 Data2x2 problem = new Data2x2(system);
                 double[] solution = problem.solve2x2();
                 UI.result.setText("X: " + solution[0] + "  "
