@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args){
         //TEST WITH IMAGE
-        File img = new File("test.png");
+        File img = new File("( -9, -5 ).png");
         ITesseract imgParser = new Tesseract();
         String[] system = new String[2];
 

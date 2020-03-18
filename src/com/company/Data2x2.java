@@ -11,8 +11,8 @@ public class Data2x2 {
 
     //CONSTRUCTOR
     public Data2x2(String[] equations){
-        this.equation1 = equations[0];
-        this.equation2 = equations[1];
+        this.equation1 = equations[0].replaceAll("\\s+", "");
+        this.equation2 = equations[1].replaceAll("\\s+", "");
         setArrays();
     }
 

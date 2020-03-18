@@ -7,7 +7,7 @@ import net.sourceforge.tess4j.*;
  */
 public class TesseractExample {
     public static void main(String[] args){
-        File imageFile = new File("eurotext.png");
+        File imageFile = new File("Test_Img_( 0, 4 ).png");
         ITesseract instance = new Tesseract();
 
         try{
