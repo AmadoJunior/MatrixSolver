@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8dce1a3-f2e7-4610-96bb-74634b08a5dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Data2x2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data2x2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tess4j/com/company/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tess4j/com/company/UI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TesseractExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TesseractExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UI" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="TESSDATA_PREFIX" value="/usr/share/tesseract-ocr/4.00/tessdata" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.company.UI" />
       <module name="tess4j" />
       <extension name="coverage">
@@ -81,11 +84,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UI" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.UI" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -118,38 +120,38 @@
       <screen x="1080" y="320" width="2560" height="1440" />
     </state>
     <state x="1760" y="641" width="847" height="677" key="#Project_Structure/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720212199" />
-    <state x="1818" y="538" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584507696747">
+    <state x="1787" y="538" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584513024678">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state x="1818" y="538" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584507696747" />
+    <state x="1787" y="538" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584513024678" />
     <state x="1818" y="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720338854" />
-    <state x="2201" y="604" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1584508955631">
+    <state x="2201" y="604" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1584511895291">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state x="2201" y="604" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584508955631" />
+    <state x="2201" y="604" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584511895291" />
     <state x="2097" y="800" width="515" height="479" key="EnvironmentVariablesDialog" timestamp="1581720328635">
       <screen x="1080" y="320" width="2560" height="1440" />
     </state>
     <state x="2097" y="800" width="515" height="479" key="EnvironmentVariablesDialog/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581720328635" />
-    <state width="2447" height="396" key="GridCell.Tab.0.bottom" timestamp="1584510552909">
+    <state width="2447" height="396" key="GridCell.Tab.0.bottom" timestamp="1584513995414">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state width="2447" height="396" key="GridCell.Tab.0.bottom/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584510552909" />
+    <state width="2447" height="396" key="GridCell.Tab.0.bottom/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584513995414" />
     <state width="1354" height="260" key="GridCell.Tab.0.bottom/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581721290500" />
-    <state width="2447" height="396" key="GridCell.Tab.0.center" timestamp="1584510552909">
+    <state width="2447" height="396" key="GridCell.Tab.0.center" timestamp="1584513995414">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state width="2447" height="396" key="GridCell.Tab.0.center/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584510552909" />
+    <state width="2447" height="396" key="GridCell.Tab.0.center/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584513995414" />
     <state width="1354" height="260" key="GridCell.Tab.0.center/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581721290500" />
-    <state width="2447" height="396" key="GridCell.Tab.0.left" timestamp="1584510552909">
+    <state width="2447" height="396" key="GridCell.Tab.0.left" timestamp="1584513995414">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state width="2447" height="396" key="GridCell.Tab.0.left/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584510552909" />
+    <state width="2447" height="396" key="GridCell.Tab.0.left/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584513995414" />
     <state width="1354" height="260" key="GridCell.Tab.0.left/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581721290499" />
-    <state width="2447" height="396" key="GridCell.Tab.0.right" timestamp="1584510552909">
+    <state width="2447" height="396" key="GridCell.Tab.0.right" timestamp="1584513995414">
       <screen x="1080" y="160" width="2560" height="1440" />
     </state>
-    <state width="2447" height="396" key="GridCell.Tab.0.right/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584510552909" />
+    <state width="2447" height="396" key="GridCell.Tab.0.right/1080.160.2560.1440/0.187.1080.1733@1080.160.2560.1440" timestamp="1584513995414" />
     <state width="1354" height="260" key="GridCell.Tab.0.right/1080.320.2560.1440/0.347.1080.1573@1080.320.2560.1440" timestamp="1581721290500" />
     <state x="1285" y="566" width="1024" height="845" key="SettingsEditor" timestamp="1581721271937">
       <screen x="1080" y="320" width="2560" height="1440" />

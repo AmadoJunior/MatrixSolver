@@ -7,8 +7,7 @@ import javax.xml.crypto.Data;
 
 public class Main {
     /*
-    Will need to create a regex to split the string around the new lines and store them into an array
-    which I will send into the data2x2 object.
+        Testing Class
      */
 
     public static void main(String[] args){

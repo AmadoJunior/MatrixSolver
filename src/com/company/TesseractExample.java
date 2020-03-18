@@ -2,7 +2,9 @@ package com.company;
 
 import java.io.File;
 import net.sourceforge.tess4j.*;
-
+/*
+    Class for Testing Tess
+ */
 public class TesseractExample {
     public static void main(String[] args){
         File imageFile = new File("eurotext.png");
