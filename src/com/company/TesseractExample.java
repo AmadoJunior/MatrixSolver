@@ -10,11 +10,12 @@ public class TesseractExample {
         File imageFile = new File("Test_Img_( 0, 4 ).png");
         ITesseract instance = new Tesseract();
 
-        try{
-            String result = instance.doOCR(imageFile);
-            System.out.println(result);
-        } catch(TesseractException e) {
-            System.err.println(e.getMessage());
+        String test = "2x+3y=56";
+        String standardForm = "\\d+x(+|-|*|/)\\d+y=\\d+";
+        if(test.matches(standardForm)){
+            System.out.println("It matches");
+        } else {
+            System.out.println("no");
         }
     }
 }

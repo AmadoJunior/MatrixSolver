@@ -3,11 +3,15 @@ package com.company;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.File;
+import java.text.DecimalFormat;
+
 import net.sourceforge.tess4j.*;
 
 
 public class UI implements ActionListener {
     //Fields
+    public static DecimalFormat numberFormat = new DecimalFormat("#.00");
+    public static String standardForm = "-?\\d+x(\\+|-|\\*|/)-?\\d+y=-?\\d+";
     Browse browse;
     JFrame frame;
     public static JTextField eq1, eq2;
@@ -65,12 +69,17 @@ public class UI implements ActionListener {
 
     //ACTIONS PERFORMED FOR "solveButton"
     public void actionPerformed(ActionEvent e){
-        this.userInput[0] = this.eq1.getText();
-        this.userInput[1] = this.eq2.getText();
-        Data2x2 problem = new Data2x2(userInput);
-        double[] solution = problem.solve2x2();
-        result.setText("X: " + solution[0] + "  "
-                        + "Y: " + solution[1]);
+        if(this.eq1.getText().matches(standardForm) && this.eq2.getText().matches(standardForm)){
+            this.userInput[0] = this.eq1.getText();
+            this.userInput[1] = this.eq2.getText();
+            Data2x2 problem = new Data2x2(userInput);
+            double[] solution = problem.solve2x2();
+            result.setText("X: " + numberFormat.format(solution[0]) + "  "
+                    + "Y: " + numberFormat.format(solution[1]));
+        } else {
+            result.setText("Not in Standard Form");
+        }
+
     }
     //MAIN
     public static void main(String[] args){
@@ -100,20 +109,28 @@ class Browse implements ActionListener {
         //TESSERACT-OCR INSTANCE
         ITesseract imgParser = new Tesseract();
 
-        //Checking for unsupported file formats
-        if(     fileName.substring(fileName.length()-3, fileName.length()).equals("png") ||
-                fileName.substring(fileName.length()-3, fileName.length()).equals("jpg") ||
-                fileName.substring(fileName.length()-4, fileName.length()).equals("jpeg")   )
-        {
+        //Checking for unsupported file formats and confirming standard form
+        if(
+                    fileName.substring(fileName.length()-3, fileName.length()).equals("png") ||
+                    fileName.substring(fileName.length()-3, fileName.length()).equals("jpg") ||
+                    fileName.substring(fileName.length()-4, fileName.length()).equals("jpeg")
+        ) {
 
             try {
                 String[] system = imgParser.doOCR(img).split("\n");
-                UI.eq1.setText(system[0]);
-                UI.eq2.setText(system[1]);
-                Data2x2 problem = new Data2x2(system);
-                double[] solution = problem.solve2x2();
-                UI.result.setText("X: " + solution[0] + "  "
-                        + "Y: " + solution[1]);
+                system[0] = system[0].replaceAll("\\s","");
+                system[1] = system[1].replaceAll("\\s","");
+                if(system[0].matches(UI.standardForm) && system[1].matches(UI.standardForm)){
+                    UI.eq1.setText(system[0]);
+                    UI.eq2.setText(system[1]);
+                    Data2x2 problem = new Data2x2(system);
+                    double[] solution = problem.solve2x2();
+                    UI.result.setText("X: " + UI.numberFormat.format(solution[0]) + "  "
+                            + "Y: " + UI.numberFormat.format(solution[1]));
+                } else {
+                    UI.result.setText("Unsupported Format");
+                }
+
             } catch(TesseractException e) {
                 System.err.println(e.getMessage());
             }
